@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lynn Lin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="./utils/css/bootstrap.css" rel="stylesheet">
+    <link href="./utils/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./utils/css/rglab.css" rel="stylesheet">
+	
+    <!-- Le fav and touch icons -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> -->
+  </head>
+  
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+  <!--<body data-spy="scroll" data-target=".bs-docs-sidebar">-->
+  <!--==================Navbar=================================-->
+	  <div class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="navbar-inner">
+			  <div class="container">
+				  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+				  </button>
+				  <a class="brand" href="./index.html">Lynn</a>
+				  <div class="nav-collapse collapse">
+					  <ul class="nav">
+					  <li class="">
+					  <a href="./index.html" rel="tooltip" title="Home page"><i class="icon-home icon-white"></i> Home</a>
+					  </li>
+					  <li class="active" rel="tooltip" title="Research">
+					  <a href="#" rel="tooltip" title="My research interests"><i class="icon-pencil icon-white"></i> Research</a>
+					  </li>
+					  <li class="">
+					  <a href="./publications.html" rel="tooltip" title="My publications"><i class="icon-book icon-white"></i> Publications</a>
+					  </li>
+					  <li class="">
+					  <a href="./teaching.html" rel="tooltip" title="My teaching experience"><i class="icon-tasks icon-white"></i> Teaching</a>
+					  </li>
+					  <li class="">
+					  <a href="./Lynn_cv.pdf" rel="tooltip" title="Download my CV"><i class="icon-file icon-white"></i> CV</a>
+					  </li>
+					 <!-- <a href="./software.html" rel="tooltip" title="Our softwares"><i class="icon-cog icon-white"></i> Software</a>
+					  </li>
+					  <li class="">
+					-->
+					  <li class="">
+					  <a href="./contact.html" rel="tooltip" title="Contact me"><i class="icon-envelope icon-white"></i> Contact</a>
+					  </li>
+					  </ul>
+					  <form class="navbar-search pull-right" action="http://google.com/search" method="get">
+					  <input type="hidden" name="q" value="site:rglab.org" />						  
+					  </form>
+				  </div><!--/.nav-collapse -->		  
+			  </div>
+		  </div>
+	  </div>
+
+		  <!-- Masthead ================================================== -->
+		  <header class="jumbotron subhead" id="home" background='url("../img/bs-docs-masthead-pattern.png")'>
+	  		<div class="container">
+				  <p><br></p>
+			  <h1>Research</h1>
+				  <p><br></p>
+	  		</div><!-- /container -->
+		  </header><!-- /header -->
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+    </div>
+  </div>
+</div>
+<!--=======================YOU CAN REMOVE STUFF FROM HERE===================================-->
+
+	<div class="container">
+	<div class="row">
+	<div class="span8">
+	<div class="well">
+   			    <p style="font-size:16px; line-height: 1.5;" >My current research focuses on a range of related problems in Bayesian mixture model development for  classification , variable selection, design and model selection, structured and hierarchical non-parametric Bayesian methods, rare event detection, and statistical computation involving simulation and optimization. Much of this is linked to problems involving large data sets, with originating motivations in analysis of biomedical data from flow cytometry technologies.</p>
+
+	</div>
+	</div>
+	</div>
+	</div>
+
+	  <div class="container">
+	  <div class="row">				
+			  <div class="span8" height=500px>
+  <li><p style="width: 750px; font: 16pt Comic Sans, Georgia, serif;font-style:italic;color:#2F4F4F;"><strong>Mixtures, classification and variable selection</strong></p></li>
+		<p style="line-height: 1.5;">Data sets of increasing scale and complexity pose challenges to standard statistical methods, and these are exemplified in areas where one goal is classification and discrimination of subpopulations. A key general question we have explored is to identify subsets of variables that play roles in discrimination of subpopulations in the context of multivariate mixture modeling. We introduced a new discriminative information measure utilizing the concordance between multivariate mixture component densities, and have developed and applied it to these general variable selection/design questions in flow cytometry applications (and others).   The method is both effective and computationally attractive for routine use in assessing and prioritizing subsets of variables according to their roles in discriminating subpopulation structure.
+		</p> </br>
+		
+		<li><p style="width: 750px; font: 16pt Comic Sans, Georgia, serif;font-style:italic;color:#2F4F4F;"><strong>High dimensional data clustering and rare event detection</strong></p></li>
+		<p style="line-height: 1.5;">As the number of measured variables grows, there is an increasing need to consider structured, hierarchical models to enable sensitive inference on subpopulation structure. Moreover, as sample sizes increase we often face problems of masking of subtler substructure; model fitting can often lack the ability to identify “rare events” due to the dominance of much of the data. Our work has introduced novel, hierarchical nonparametric Bayesian mixture models that address both problems. The key idea is to first partition the outcome variables into a set of subsets, typically involving substantive contextual information.  We then apply Bayesian nonparametric mixture models to the reduced-dimensional distribution of one selected subset of variables; this delivers classification/clustering in that marginal space. This naturally then induces partitions of the data based on the marginal classification, and a second level of mixture modeling applies—in parallel—to a second subset of variables within each of the partitioned data sets.  This can be repeated, hierarchically defining an overall product-mixture model within which each modeling exercise is developed in lower dimensions and with smaller data subsets. These latter features enable more sensitive isolation of fine substructure and a focus on rare subpopulations, in particular. 
+		</p></br>
+
+		<li><p style="width: 750px; font: 16pt Comic Sans, Georgia, serif;font-style:italic;color:#2F4F4F;"><strong>High dimensional data clustering and graphical model</strong></p></li>
+		<p style="line-height: 1.5;">Data in high dimensions is often difficult to understand and visualize. Graphical models are frequently used to address these problems, taking advantage of the (conditional) independencies between subsets of variables based on their representations using a graph. Unlike previous graphical model approaches, we proposed here a new Bayesian mixture model using binary trees, constructed with the goal of modeling the data structure from each individual dimension. The dependencies among the dimensions are captured by the tree structure. Kingman's coalescent is utilized as a prior for the tree structure. An efficient MCMC algorithm is developed for posterior inference on model parameters and tree structures.
+		</p></br>
+		<li><p style="width: 750px; font: 16pt Comic Sans, Georgia, serif;font-style:italic;color:#2F4F4F;"><strong>Novel statistical methods for analyzing single-cell assays</strong></p>
+		</li>
+		<p style="line-height: 1.5;"> Cell populations in blood and tissue are not homogeneous; even clonotypes of individual cells can exist in different biochemical states that define measurable
+                functional differences between them. This single-cell heterogeneity is informative, but lost in assays that measure cell mixtures. Our work has introduced a state-of-the-art Bayesian hierarchical method for multivariate modeling of single-cell assays that improves the detection of biologically relevant, and potentially small, changes across one or more cell subsets, which directly
+addresses major hurdles in the analysis of high-dimensional single-cell data. Our approach jointly model cell subsets, taking into account their dependence structure, and combine information across subjects to detect subject-specific treatment effects (e.g., response to vaccination), which significantly increase power and avoid multiple comparisons across subsets. Our model can automatically select differentially expressed cell subsets using a sparse variable selection prior. We also explore models that can combine the number of expressed cells with their level of expression to detect biological changes. 
+		</p>
+
+                 </div><!--span-->
+			
+		
+	  </div><!-- /row -->
+	  </div><!-- /container -->
+		  
+<!--=======================TO HERE===================================-->
+		
+	  <div class="container">
+		  <div class="row">																
+			  <div class="span12">
+				  <!-- Footer ================================================== -->
+				  <footer class="footer">
+					  <p class="pull-right"><a href="#">Back to top</a></p>
+					  <p class="pull-left">Made with <a href="http://twitter.github.com/bootstrap">Bootstrap</a>.</p>
+				  </footer>
+				  </div>	  
+			  </div>
+		  </div>
+	  </div><!-- /container -->
+    
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>	
+    <script src="./utils/js/jquery.js"></script>
+    <script src="./utils/js/bootstrap.js"></script>
+    <script src="./utils/js/application.js"></script>
+    <script type="text/javascript" src="./utils/js/jquery.tweetable.js"></script>	
+  </body>
+</html>
