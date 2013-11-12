@@ -153,6 +153,11 @@
           <footer class="footer">
             <p class="pull-right"><a href="#">Back to top</a></p>
             <p class="pull-left">Made with <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
+            <br>
+            <br>
+            <button class="pull-left" type="button" id="start-randomize">Randomize</button>
+            <button class="pull-left" type="button" id="stop-randomize" style="display: none">STOP</button>
+            <button type="button" id="reset">Reset</button>
           </footer>
         </div>
       </div>
@@ -163,5 +168,22 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>	
     <script src="./bootstrap-3.0.0/assets/js/jquery.js"></script>
     <script src="./bootstrap-3.0.0/dist/js/bootstrap.js"></script>
+    <script src="./utils/Rjs.js"></script>
+    <script>
+      var intervalId;
+      $("#start-randomize").on("click", function(event){
+        $("#start-randomize").css("display", "none");
+        $("#stop-randomize").css("display", "");
+        intervalId = all_random(1000, 3);
+      })
+      $("#stop-randomize").on("click", function(event){
+        $("#start-randomize").css("display", "");
+        $("#stop-randomize").css("display", "none");
+        clearInterval(intervalId);
+      })
+      $("#reset").on("click", function(event){
+        location.reload();
+      })
+    </script>
   </body>
 </html>
