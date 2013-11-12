@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -28,7 +28,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.html" style="color: red">Renan Sauteraud</a>
+            <!--<a class="navbar-brand" href="./index.html" style="color: red">Renan Sauteraud</a>-->
+            <a id="rdm-col" class="navbar-brand" href="./index.html">Renan Sauteraud</a>
           </div><!--navbar-header-->
           <!--collapsible part-->
           <div class="collapse navbar-collapse collapse1">
@@ -45,6 +46,13 @@
 
 
     <div class="container">
+      <div class="row">
+        <div class="col-md-10 cold-md-offset-1">
+          <div id="PRINT">
+            TEXT HERE
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- == Footer == -->
@@ -64,5 +72,13 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>	
     <script src="./bootstrap-3.0.0/assets/js/jquery.js"></script>
     <script src="./bootstrap-3.0.0/dist/js/bootstrap.js"></script>
+    <script>//Random colors for the brand
+      $(function(){
+        var color = Math.floor(Math.random() * 16777216).toString(16);
+        var color = '#000000'.slice(0, -color.length) + color;
+        $("#rdm-col").css("color", color);
+        $("#PRINT").text(color);
+      })
+    </script>
   </body>
 </html>
