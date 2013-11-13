@@ -15,6 +15,8 @@ function get_color_5(){
 var $all = $("*"); //Look for all elements once
 
 function all_random(interval, level){
+  if(typeof(interval)==='undefined') interval = 2000;
+  if(typeof(level)==='undefined') level = 1;
   var intervalID = setInterval(function(){
     $all.each(function(){
       switch(level){
