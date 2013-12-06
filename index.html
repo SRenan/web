@@ -155,9 +155,11 @@
             <p class="pull-left">Made with <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
             <br>
             <br>
-            <button class="pull-left" type="button" id="start-randomize">Randomize</button>
-            <button class="pull-left" type="button" id="stop-randomize" style="display: none">STOP</button>
-            <button type="button" id="reset">Reset</button>
+            <button class="hidden-opts" id="hopts">Options</button>
+            <button type="button" id="start-randomize" style="display: none">Randomize</button>
+            <button type="button" id="stop-randomize" style="display: none">STOP</button>
+            <button type="button" id="reset" style="display: none">Reset</button>
+            <br>
           </footer>
         </div>
       </div>
@@ -170,10 +172,15 @@
     <script src="./bootstrap-3.0.0/dist/js/bootstrap.js"></script>
     <script src="./utils/Rjs.js"></script>
     <script>
+      $("#hopts").on("click", function(event){
+        $("#start-randomize").css("display", "")
+        $("#hopts").css("display", "none");
+      })
       var intervalId;
       $("#start-randomize").on("click", function(event){
         $("#start-randomize").css("display", "none");
         $("#stop-randomize").css("display", "");
+        $("#reset").css("display", "");
         intervalId = all_random(1000, 1);
       })
       $("#stop-randomize").on("click", function(event){
