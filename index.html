@@ -35,7 +35,7 @@
               <li><a href="#software"><span class="icon-gamepad"></span> Software</a></li>
               <li><a href="#publications"><span class="icon-book"></span> Publications</a></li>
               <li><a href="#contact"><span class="icon-envelope"></span> Contact</a></li>
-              <li><a href="./CV.html"><span class="icon-envelope"></span> CV</a></li>
+	      <!--<li><a href="./CV.html"><span class="icon-envelope"></span> CV</a></li>-->
             </ul>
           </div><!--navba-collapse-->
         </div>
@@ -55,9 +55,6 @@
             <br>
             <br>
             In 2011, I completed my master degree in <a href="http://www.bibs.u-psud.fr/master.php" title="Careful! It's in French">Bioinformatics and Biostatistics</a> at <a href="http://www.u-psud.fr/fr/index.html">Universit&eacute; Paris-Sud</a>. My training ended with a six months internship in the <a href="http://www.dbb.su.se/">Department of Biochemistry and Biophysics</a>, at Stockholms universitet under the supervision of <a href="http://www.dbb.su.se/en/?p=researchgroup&id=37">Prof. Arne Elofsson</a>.
-            <!--In 2011, a six months internship in the <a href="http://www.dbb.su.se/">Department of Biochemistry and Biophysics</a>, at Stockholms universitet under the supervision of <a href="http://www.dbb.su.se/en/?p=researchgroup&id=37">Prof. Arne Elofsson</a> concluded my master degree in <a href="http://www.bibs.u-psud.fr/master.php" title="Careful! It's in French">Bioinformatics and Biostatistics</a> at <a href="http://www.u-psud.fr/fr/index.html">Universit&eacute; Paris-Sud</a>.-->
-
-              <!--xxcfdgffsl;gsdkg;lsafter a master thesis in the <a href="http://www.dbb.su.se/">Department of Biochemistry and Biophysics</a> at Stockholms universitet under the supervision of <a href="http://www.dbb.su.se/en/?p=researchgroup&id=37">Prof. Arne Elofsson</a>. -->
             </p>
           </div>
         </div>
@@ -77,23 +74,30 @@
           <h4>PICS</h4>
           <p>For the analysis of ChIP-Seq data, PICS (Probabilistic Inference for ChIP-Seq) identifies genomic regions bound by transcription factors.
           The algorithm is implemented in C and makes use of parallel computing.</p>
-          <p><a href="http://www.bioconductor.org/packages/release/bioc/html/PICS.html">Bioconductor</a>, <a href="https://github.com/SRenan/PICS">GitHub</a><p>
+          <p><a href="http://www.bioconductor.org/packages/release/bioc/html/PICS.html">Bioconductor</a>, <a href="https://github.com/SRenan/PICS">GitHub</a></p>
+	  <br>
           <h4>PING</h4>
           <p>PING increments on PICS and propose a method for the detection of nucleosome positions for both single-end and paired-end sequencing data. The packages also includes graphic tools for the representation and comparison of results.</p>
-          <p><a href="http://www.bioconductor.org/packages/release/bioc/html/PING.html">Bioconductor</a>, <a href="https://github.com/SRenan/PING">GitHub</a><p>
+          <p><a href="http://www.bioconductor.org/packages/release/bioc/html/PING.html">Bioconductor</a>, <a href="https://github.com/SRenan/PING">GitHub</a></p>
+	  <br>
           <h4>pepStat</h4>
           <p>This package predicts antibody binding sites on peptides using microarray data.</p>
-          <p><a href="https://github.com/RGLab/pepStat">GitHub</a><p>
-          <h4>PEP.db</h4>
-          <p>PEP.db contains datasets that can be used with pepStat to add information regarding the position of the peptides of interest, or their zScores. It offers datasets for multiple clades of the different reference genomes.
-          <p><a href="https://github.com/RGLab/PEP.db">GitHub</a><p>
+          <p><a href="https://github.com/RGLab/pepStat">GitHub</a></p>
+	  <br>
+          <h4>pepDat</h4>
+	  <p>pepDat is a data package that contains datasets and sample files used for examples and vignettes in the peptide microarray analysis pipeline.</p>
+          <p><a href="https://github.com/RGLab/PEP.db">GitHub</a></p>
+	  <br>
           <h4>Pviz</h4>
           <!--<p>Pviz is a package for peptide visualisation inspired from the popular <a href="http://www.bioconductor.org/packages/release/bioc/html/Gviz.html">Gviz</a>. It add new tracks for visualisation of peptide microarray data and protein annotations while staying fully compatible with Gviz.</p>-->
-          <p>Pviz is an R package for peptide visualisation inspired by and depending on the popular <a href="http://www.bioconductor.org/packages/release/bioc/html/Gviz.html">Gviz</a>. It introduces new types of track and extends the existing ones in order to deal with amino-acid based data such as peptide microarray.
+	  <p>Pviz is an R package for peptide visualisation inspired by and depending on the popular <a href="http://www.bioconductor.org/packages/release/bioc/html/Gviz.html">Gviz</a>. It introduces new types of track and extends the existing ones in order to deal with amino-acid based data such as peptide microarray.</p>
           <p><a href="https://github.com/RGLab/Pviz">GitHub</a><p>
+	  <!--
           <h4>HIV.db</h4>
           <p>HIV.db is a collection of annotations for HIV (hxb2) and SIV (mac239) sequences. It includes genes, gene products, genomic structure elements as well as known epitopes. The selected elements can be plotted against the data using Pviz</p>
           <p><a href="https://github.com/RGLab/HIV.db">GitHub</a><p>
+	  -->
+	  <br>
           <h4>LumiR</h4>
           <p>Currently a work in progress, LumiR provides S4 structures and functions to manipulate and analyse Luminex Bead Array Multiplex Assay data. It is designed to handle raw data from the three main manufacturer: Luminex, MiraiBio and BioRad.
           <p><a href="https://github.com/RGLab/LumiR">GitHub</a><p>
@@ -103,6 +107,9 @@
           <br>
           <img src="./images/PING.png" alt="PING plot" class="img-responsive img-rounded package-figure">
           <p class="figure-legend" style="font-size: 75%">Summary plot of a <b>PING</b> analysis</p>
+          <br>
+          <img src="./images/Pviz.png" alt="Pviz plot" class="img-responsive img-rounded package-figure">
+	  <p class="figure-legend" style="font-size: 75%"><b>Pviz</b> plot of antibody response frequency calculated by <b>pepStat</b> analysis</p>
           <br>
           <img src="./images/LumiR.png" alt="LumiR plot" class="img-responsive img-rounded package-figure">
           <p class="figure-legend" style="font-size: 75%">Fitting of 5-Parameter Logistic curves using <b>LumiR</b></p>
@@ -115,6 +122,11 @@
         <div class="col-md-10 col-md-offset-1">
           <h2>Publications</h2>
           <ul>
+	  <li><p>Lucia Vojtech, Sangsoon Woo, Sean Hughes, Claire Levy, Lamar Ballweber, Renan Sauteraud, Johanna Strobl, Katharine Westerberg, Raphael Gottardo, Muneesh Tewari and Florian Hladik.
+	    <b>Exosomes in human semen carry a distinctive repertoire of small non-coding RNAs with potential regulatory functions</b>
+	    <em>Nucleic Acids Research</em> doi: 10.1093/nar/gku347 (2014)
+	    <a href="http://nar.oxfordjournals.org/content/early/2014/05/16/nar.gku347.abstract?sid=314743fc-4a20-4f88-a942-1827be18b1a0" class="icon-file" target="_BLANK"></a>
+	  </p></li>  
           <li><p>Greg C. Imholte, Renan Sauteraud, Bette Korber, Robert T. Bailer, Ellen T. Turk, Xiaoying Shen, Georgia D. Tomaras, John R. Mascola, Richard A. Koup, David C. Montefiori, Raphael Gottardo
             <b>A computational framework for the analysis of peptide microarray antibody binding data with application to HIV vaccine profiling</b>
             <em>Journal of Immunological Methods</em>, Volume 395, Issues 1–2, 30 September 2013, Pages 1–13
